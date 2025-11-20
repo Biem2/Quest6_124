@@ -32,4 +32,9 @@ fun TampilSiswa(
     statusUiSiswa: Siswa,
     onBackButtonClicked:()->Unit
 ){
+    val items = listOf(
+        Pair(first = stringResource(id = R.string.nama), second = statusUiSiswa.nama),
+        Pair(first = stringResource(id = R.string.gender), second = statusUiSiswa.gender),
+        Pair(first = stringResource(id = R.string.alamat), second = statusUiSiswa.alamat)
+    )
     
